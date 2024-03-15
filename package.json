@@ -1,0 +1,91 @@
+{
+  "name": "@nathanpb/react-plotly",
+  "license": "MIT",
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "react-plotly.nathanpb.dev",
+  "author": "Nathan P. Bombana <nathan.pbombana@gmail.com>",
+  "description": "Unofficial React wrapper for Plotly.js",
+  "keywords": [
+    "plotly",
+    "react",
+    "datavis",
+    "chart",
+    "graph"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NathanPB/react-plotly.git"
+  },
+  "packageManager": "yarn@4.1.0",
+  "main": "./dist/react-plotly.umd.js",
+  "module": "./dist/react-plotly.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/react-plotly.es.js",
+      "require": "./dist/react-plotly.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\""
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.2.19",
+    "@storybook/addon-essentials": "^8.0.0",
+    "@storybook/addon-interactions": "^8.0.0",
+    "@storybook/addon-links": "^8.0.0",
+    "@storybook/addon-onboarding": "^8.0.0",
+    "@storybook/blocks": "^8.0.0",
+    "@storybook/react": "^8.0.0",
+    "@storybook/react-vite": "^8.0.0",
+    "@storybook/test": "^8.0.0",
+    "@types/plotly.js-dist-min": "^2.3.4",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint-plugin-storybook": "^0.8.0",
+    "json": "^11.0.0",
+    "plotly.js-dist-min": "^2.30.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^8.0.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.6",
+    "vite-plugin-dts": "^3.7.3"
+  },
+  "peerDependencies": {
+    "@types/plotly.js-dist-min": "*",
+    "plotly.js-dist-min": "2.*",
+    "react": "^18.*",
+    "react-dom": "^18.*"
+  },
+  "peerDependenciesMeta": {
+    "@types/plotly.js-dist-min": {
+      "optional": true
+    },
+    "plotly.js-dist-min": {
+      "optional": false
+    },
+    "react": {
+      "optional": false
+    },
+    "react-dom": {
+      "optional": false
+    }
+  },
+  "files": [
+    "dist"
+  ]
+}
