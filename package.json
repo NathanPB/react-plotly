@@ -1,7 +1,7 @@
 {
   "name": "@nathanpb/react-plotly",
   "license": "MIT",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "homepage": "react-plotly.nathanpb.dev",
   "author": "Nathan P. Bombana <nathan.pbombana@gmail.com>",
