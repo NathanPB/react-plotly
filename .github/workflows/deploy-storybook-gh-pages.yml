@@ -16,6 +16,7 @@ jobs:
 
       - run: yarn
       - run: yarn build-storybook
+      - run: touch storybook-static/.nojekyll
 
       - name: Deploy docs 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
