@@ -41,7 +41,6 @@ export const PlotlyAutoSized = forwardRef<PlotlyAutoSizedRefInterface, PlotlyAut
     const element = plotRef.current?.root?.parentElement
     if (element) {
       const handler = () => {
-        console.log(element, 'resized')
         const { width, height } = element.getBoundingClientRect()
         setSize([width, height])
       }
